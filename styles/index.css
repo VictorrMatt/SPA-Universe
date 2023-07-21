@@ -1,0 +1,105 @@
+:root {
+  font-size: 62.5%;
+  --white-color: white;
+  --text-disable: #c4c4cc;
+  --btn-hover: #02799d;
+  --h2-color: #e1e1e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+body {
+  font-family: "Roboto", cursive;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 4rem 100% 4rem 7.2rem;
+}
+
+#logo {
+  margin-right: 4.3rem;
+}
+
+#logo + #nav-items {
+  display: flex;
+  align-items: center;
+  gap: 5.367rem;
+}
+
+a {
+  font-size: 2.167rem;
+  line-height: 2.167rem;
+  padding: 0 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--text-disable);
+}
+
+#page-content > div {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 18.5rem 10.2rem auto 10.2rem;
+  color: var(--h2-color);
+}
+
+#page-content div h1,
+#page-content div h2 {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6rem;
+}
+
+#page-content div p {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.9rem;
+  width: 64.8rem;
+}
+
+input[type="button"] {
+  font-family: "Roboto", cursive;
+  padding: 1.2rem 3.2rem;
+  border-radius: 5px;
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+  background-color: transparent;
+  cursor: pointer;
+  width: 19.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="button"]:hover {
+  color: var(--btn-hover);
+  background-color: var(--white-color);
+}
+
+#page-content > #home {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-content > #home h1 {
+  margin-bottom: 2.4rem;
+}
+
+#page-content > #universe h2,
+#page-content > #exploration h2 {
+  margin-bottom: 1.6rem;
+}
